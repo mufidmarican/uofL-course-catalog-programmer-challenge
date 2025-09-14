@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UofL Course Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="uof-header">
+        <div class="header-content">
+            <h1>UofL Course Catalog</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <main class="main-content">
+            <div class="page-title">
+                <h1>Class Search</h1>
+            </div>
+            
+            
+           
+            <div class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" id="subjectInput" placeholder="e.g., CHEM, PHIL" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Catalog Nbr</label>
+                        <input type="text" id="catalogInput" placeholder="e.g., 390, 459" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Course Component</label>
+                        <select class="form-select" id="componentSelect">
+                            <option value="">All Components</option>
+                            <option value="LEC">LEC - Lecture</option>
+                            <option value="LAB">LAB - Laboratory</option>
+                            <option value="DIS">DIS - Discussion</option>
+                            <option value="SEM">SEM - Seminar</option>
+                            <option value="IND">IND - Independent Study</option>
+                            <option value="INT">INT - Internship</option>
+                            <option value="FLD">FLD - Field Exp/Practicum</option>
+                            <option value="RES">RES - Research</option>
+                            <option value="THE">THE - Thesis/Dissertation</option>
+                            <option value="CON">CON - Continuance</option>
+                            <option value="COP">COP - Co-op</option>
+                            <option value="CLN">CLN - Clinical</option>
+                            <option value="RSC">RSC - Research</option>
+                            <option value="REC">REC - Recitation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="button-group">
+                        <button id="searchButton" class="search-btn">Search</button>
+                        <button id="resetButton" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group description-search">
+                        <label>Description Search</label>
+                        <input type="text" id="descriptionInput" placeholder="Search course descriptions..." class="form-input">
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="results-info">
+                <span id="resultsCount">Loading courses...</span>
+            </div>
+
+        
+        <div id="loadingSpinner" class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading course catalog...</p>
+        </div>
+
+        
+        <div id="errorMessage" class="error-message" style="display: none;">
+            <h3> Error Loading Catalog</h3>
+            <p>Unable to load the course catalog. Please try refreshing the page.</p>
+            <button onclick="location.reload()" class="retry-button">Retry</button>
+        </div>
+
+        
+        <main class="main-content">
+            <div id="courseGrid" class="course-grid">
+             
+            </div>
+        </main>
+
+       
+        <footer class="footer">
+            <p>&copy; 2025 University of Louisville - Integrative Design and Development</p>
+        </footer>
+    </div>
+
+
+<div id="chatbot" class="chatbot-container">
+    <div class="chatbot-header">
+        <div class="chatbot-title">
+            <img src="images/cardinal.jpg" alt="Chatbot Icon" class="chatbot-icon" />
+            <span>Course Assistant</span>
+        </div>
+        <button id="chatbotToggle" class="chatbot-toggle">−</button> 
+    </div>
+    <div class="chatbot-body">
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Hi Cardinals! I'm your AI course assistant. I can help you find courses, recommend similar ones, or answer questions about the catalog. What would you like to know?
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatInput" placeholder="Ask me about courses..." class="chatbot-input">
+                <button id="sendMessage" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Python requirements for UofL Course Catalog
+# No external dependencies required - uses only Python standard library
+
+# For CSV to JSON conversion
+# csv - built-in module
+# json - built-in module
+# pathlib - built-in module
+# sys - built-in module
+
+# For local web server (optional)
+# http.server - built-in module
+
+# Version requirements
+# Python >= 3.6
