@@ -74,11 +74,10 @@ Programmer Challenge/
 ├── programmer-challenge.md      # Original challenge requirements
 ├── catalog dev.csv             # Original course data
 ├── convert-csv-to-json.py      # CSV to JSON conversion script
-└── web-app/                    # Web application files
-    ├── index.html              # Main HTML file
-    ├── styles.css              # CSS styles and responsive design
-    ├── script.js               # JavaScript functionality
-    └── catalog.json            # Converted course data (generated)
+├── index.html              # Main HTML file
+├── styles.css              # CSS styles and responsive design
+├── script.js               # JavaScript functionality
+└── catalog.json            # Converted course data (generated)
 ```
 
 Technical Implementation
