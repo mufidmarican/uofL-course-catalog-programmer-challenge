@@ -73,7 +73,7 @@ Programmer Challenge/
 ├── README.md                    # This file
 ├── programmer-challenge.md      # Original challenge requirements
 ├── catalog dev.csv             # Original course data
-├── convert-csv-to-json.py      # CSV to JSON conversion script
+├── convert-csv-to-json.py       # CSV to JSON conversion script
 ├── index.html              # Main HTML file
 ├── styles.css              # CSS styles and responsive design
 ├── script.js               # JavaScript functionality
@@ -107,13 +107,7 @@ Key Components
 - **Color Scheme**: Professional gradient background with clean white cards
 - **Typography**: Inter font family for modern, readable text
 - **Animations**: Smooth hover effects and staggered card animations
-- **Icons**: SVG icons for search and visual elements
-
-Responsive Breakpoints
-- **Mobile**: 320px - 767px (Single column layout)
-- **Tablet**: 768px - 1023px (Two column grid)
-- **Desktop**: 1024px - 1199px (Three column grid)
-- **Large Desktop**: 1200px+ (Four column grid)
+- **Icons**: cardinal bird icons for search and visual elements
 
 User Experience
 - **Search**: Instant search with visual feedback
