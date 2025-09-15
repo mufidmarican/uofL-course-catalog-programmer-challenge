@@ -66,7 +66,7 @@ Installation & Setup
 4. **Open in Browser**
    Navigate to `http://localhost:8000` in your web browser
 
- 📁 Project Structure
+ Project Structure
 
 ```
 Programmer Challenge/
